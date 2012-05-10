@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ProjetoTesteActivity!</string>
+    <string name="app_name">ProjetoTeste</string>
+    <string name="btnFechar">Fechar sistema</string>
+    <string name="labelFechar">Fechar aplicação</string>
+
+</resources>
