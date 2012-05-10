@@ -13,6 +13,7 @@ public class AdicionarItemActivity extends Activity {
         
         TextView textview = new TextView(this);
         textview.setText("Adicionar ");
+        textview.setPadding(0, 100, 0, 0);
         setContentView(textview);
     }
 }
