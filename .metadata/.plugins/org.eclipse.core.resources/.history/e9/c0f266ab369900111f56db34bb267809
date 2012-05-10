@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="label_valor">Dígite o valor que deseja calcular a percentagem</string>
+    <string name="app_name">Calcular Percentagem</string>
+    <string name="label_percentagem">Dígite a percentagem que deseja calcular</string>
+    <string name="label_percentagem_sinal">%</string>
+    <string name="button_somar">somar</string>
+    <string name="button_diminuir">diminuir</string>
+    <string name="image_bg">fundo</string>
+    <string name="label_resultado">resultado: </string>
+    <string-array name="spinner_parcelas">
+        <item>meses</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>    
+
+</resources>

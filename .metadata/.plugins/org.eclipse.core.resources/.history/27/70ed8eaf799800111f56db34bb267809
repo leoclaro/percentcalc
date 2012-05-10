@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="label_valor">Dígite o valor que deseja calcular a percentagem</string>
+    <string name="app_name">CalcularPercentagem</string>
+    <string name="label_percentagem">Dígite a percentagem que deseja calcular</string>
+    <string name="button_somar">somar</string>
+    <string name="button_diminuir">diminuir</string>
+
+</resources>

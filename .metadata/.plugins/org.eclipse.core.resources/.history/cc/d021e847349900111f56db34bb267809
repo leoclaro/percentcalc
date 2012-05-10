@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sobreTitulo">Calculadora de %</string>
+    <string name="sobreAutor">Autor: Leonardo Claro</string>
+    <string name="sobreEmail">E-mail: leo.claro@gmail.com</string>
+    <string name="sobreWebsite">Site: http://code.google.com/p/percent-calc/</string>
+    <string name="sobreDescricao">Calculadora que realiza cálculos percentuais com simplicidade.</string>
+    
+</resources>

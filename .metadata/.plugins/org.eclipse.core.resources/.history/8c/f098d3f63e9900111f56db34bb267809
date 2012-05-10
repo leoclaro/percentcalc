@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="23dp"
+        android:contentDescription="@string/sobreTitulo"
+        android:src="@drawable/bg_sobre" />
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewBG"
+        android:layout_marginLeft="128dp"
+        android:text="@string/sobreTitulo"
+        android:textSize="20dp" />
+    
+    <TextView
+        android:id="@+id/textViewDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewTitulo"
+        android:layout_below="@+id/textViewTitulo"
+        android:layout_marginTop="5dp"
+        android:text="@string/sobreDescricao" />
+    
+    <TextView
+        android:id="@+id/textViewContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewBG"
+        android:text="@string/sobreContato"
+        android:layout_below="@+id/imageViewBG"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp" />
+    
+    <TextView
+        android:id="@+id/textViewAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewBG"
+        android:layout_below="@+id/textViewContato"
+        android:layout_marginTop="5dp"
+        android:text="@string/sobreAutor" />
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewBG"
+        android:layout_below="@+id/textViewAutor"        
+        android:text="@string/sobreEmail" />
+    
+    <TextView
+        android:id="@+id/textViewWebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewBG"
+        android:layout_below="@+id/textViewEmail"        
+        android:text="@string/sobreWebsite" />
+    
+    <TextView
+        android:id="@+id/textViewAgradecimentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewBG"
+        android:text="@string/sobreAgradecimentos"
+        android:layout_below="@+id/textViewWebsite"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp" />
+    
+    <TextView
+        android:id="@+id/textViewAgradecimentosCredito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageViewBG"
+        android:layout_below="@+id/textViewAgradecimentos"        
+        android:text="@string/sobreAgradecimentosCredito" />
+
+</RelativeLayout>

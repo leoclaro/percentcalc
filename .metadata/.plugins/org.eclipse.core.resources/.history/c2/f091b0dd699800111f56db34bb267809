@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="titulo">Dígite a percentagem que deseja calcular</string>
+    <string name="app_name">CalcularPercentagem</string>
+
+</resources>

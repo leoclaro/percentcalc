@@ -1,0 +1,7 @@
+package com.calcularpercentagem;
+
+public class Percent {
+	private double percentagem;
+	private double valor;
+
+}

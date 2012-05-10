@@ -1,0 +1,163 @@
+package com.calcularpercentagem;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.SeekBar;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class CalcularPercentagemActivity extends Activity {
+	SeekBar SbPercentagem;
+	EditText EtPercentagem, EtValor;
+	Button btnSomar,  btnDiminuir;	
+	TextView TvResultado;
+	double recebeProgress, resultado, resultadoTemp;
+	Spinner SpParcelas;
+	int parcelas;
+	Percent percent = new Percent();
+	AlertDialog.Builder dialog;
+	StringBuffer resultadoDetalhado;	
+	
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        EtPercentagem = (EditText) findViewById(R.id.editTextPercentagem);        
+        SbPercentagem = (SeekBar) findViewById(R.id.seekBarPercentagem);
+        TvResultado = (TextView) findViewById(R.id.textViewResultado);
+        btnSomar = (Button) findViewById(R.id.buttonSomar);
+        btnDiminuir = (Button) findViewById(R.id.buttonDiminuir);
+        EtValor = (EditText) findViewById(R.id.editTextValor);
+        SpParcelas = (Spinner) findViewById(R.id.spinnerParcelas);  
+        
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                this, R.array.spinner_parcelas, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        SpParcelas.setAdapter(adapter);
+        SpParcelas.setPrompt("Meses");
+        
+        SbPercentagem.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+    		public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+    			if(fromUser){
+    				recebeProgress = progress;
+    				EtPercentagem.setText((String.valueOf(recebeProgress/10)).replace(".0", ""));    				
+    				SbPercentagem.setProgress(progress);
+    			}
+    		}
+
+			public void onStartTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			public void onStopTrackingTouch(SeekBar seekBar) {
+				// TODO Auto-generated method stub
+				
+			}
+    	});
+
+        btnSomar.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {    
+            	if(EtValor.getText().toString().length() > 0){
+            		if(EtPercentagem.getText().toString().length() > 0){
+            			resultadoDetalhado = new StringBuffer();
+            			
+		            	percent.setPercentagem(Double.parseDouble(EtPercentagem.getText().toString())/100);
+		            	percent.setValor(Double.parseDouble((EtValor.getText().toString())));
+		            	
+		            	try{
+		            		parcelas = Integer.parseInt(SpParcelas.getSelectedItem().toString());
+		            		resultadoTemp = percent.getValor();
+		            		for(int i = 1; i <= parcelas; i++){
+		            			if(i != 1)
+		            				resultadoDetalhado.append("\n");
+		            			resultadoTemp += resultadoTemp * percent.getPercentagem();		            			
+		            			resultadoDetalhado.append(i + "º mês: " + String.valueOf(String.format("%.2f",resultadoTemp)));
+		                	}		            		
+		            	}catch(Exception e){
+		            		resultadoDetalhado.append(String.valueOf(String.format("%.2f",
+		            				((percent.getValor() * percent.getPercentagem()) + percent.getValor()))));
+		            	}
+		            	TvResultado.setText(resultadoDetalhado.toString());
+		            	resultadoDetalhado = null;
+            		}else{
+                		alertBox("Digite a percentagem");
+                		EtPercentagem.requestFocus();
+            		}
+            	}else{
+            		alertBox("Digite o valor");
+            		EtValor.requestFocus();
+            	}
+            }
+        });
+        
+        btnDiminuir.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+            	if(EtValor.getText().toString().length() > 0){
+            		if(EtPercentagem.getText().toString().length() > 0){
+            			resultadoDetalhado = new StringBuffer();
+            			
+            			percent.setValor(Double.parseDouble((EtValor.getText().toString())));
+            			percent.setPercentagem(Double.parseDouble(EtPercentagem.getText().toString())/100);
+            			
+            			try{
+                    		parcelas = Integer.parseInt(SpParcelas.getSelectedItem().toString());
+                    		resultadoTemp = percent.getValor();
+                    		for(int i = 1; i <= parcelas; i++){
+                    			if(i != 1)
+		            				resultadoDetalhado.append("\n");
+                    			resultadoTemp -= resultadoTemp * percent.getPercentagem();
+                    			resultadoDetalhado.append(i + "º mês: " + String.valueOf(String.format("%.2f",resultadoTemp)));
+                        	}
+                    	}catch(Exception e){
+                    		resultadoDetalhado.append(String.valueOf(String.format("%.2f",
+		            				((percent.getValor() * percent.getPercentagem()) - percent.getValor()))));                    		
+                    	}
+            			TvResultado.setText(resultadoDetalhado.toString());
+                    	resultadoDetalhado = null;
+            		}else{
+                		alertBox("Digite a percentagem");
+                		EtPercentagem.requestFocus();
+            		}
+            	}else{
+            		alertBox("Digite o valor");
+            		EtValor.requestFocus();
+            	}
+            }
+        });        
+    }    
+    
+    private void alertBox(String msg){ 
+    	Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();    	
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.sobre:            	
+            	Intent myIntent = new Intent(this.getBaseContext() , SobreActivity.class);
+                startActivityForResult(myIntent, 0);
+                break;           
+        }
+        return true;
+    }
+}

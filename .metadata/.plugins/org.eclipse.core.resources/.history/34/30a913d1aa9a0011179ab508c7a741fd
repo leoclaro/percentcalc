@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/imageViewBG"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:maxWidth="120px"
+        android:minWidth="120px"
+        android:maxHeight="120px"
+        android:minHeight="120px"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/image_bg"
+        android:src="@drawable/bg" />
+  
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp" >
+        
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+		
+		    <TextView
+		        android:id="@+id/textViewValor"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="28dp"		        
+		        android:text="@string/label_valor"
+		        android:textColor="#ff666666" />
+		
+		    <EditText
+		        android:id="@+id/editTextValor"
+		        android:layout_width="120dp"
+		        android:layout_height="40dp"
+		        android:layout_alignLeft="@+id/textViewValor"
+		        android:layout_below="@+id/textViewValor"
+		        android:layout_marginTop="2dp"
+		        android:ems="10"
+		        android:inputType="numberDecimal" />
+		
+		    <Spinner
+		        android:id="@+id/spinnerParcelas"
+		        android:layout_width="140dp"
+		        android:layout_height="40dp"
+		        android:layout_below="@+id/textViewValor"
+		        android:layout_marginLeft="158dp"
+		        android:layout_marginTop="2dp"
+		        android:prompt="@array/spinner_parcelas" />
+		
+		    <TextView
+		        android:id="@+id/textViewPercentagem"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/textViewValor"
+		        android:layout_below="@+id/editTextValor"
+		        android:layout_marginTop="10dp"
+		        android:text="@string/label_percentagem"
+		        android:textColor="#ff666666" />
+		
+		    <EditText
+		        android:id="@+id/editTextPercentagem"
+		        android:layout_width="60dp"
+		        android:layout_height="40dp"
+		        android:layout_alignLeft="@+id/textViewValor"
+		        android:layout_below="@+id/textViewPercentagem"
+		        android:layout_marginTop="2dp"
+		        android:ems="6"
+		        android:inputType="numberDecimal" />
+		
+		    <TextView
+		        android:id="@+id/textViewPercentagemSinal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/textViewPercentagem"
+		        android:layout_marginLeft="89dp"
+		        android:layout_marginTop="10dp"
+		        android:text="@string/label_percentagem_sinal"
+		        android:textColor="#ff666666" />
+		
+		    <SeekBar
+		        android:id="@+id/seekBarPercentagem"
+		        android:layout_width="186dp"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/textViewPercentagem"
+		        android:layout_marginLeft="110dp"
+		        android:layout_marginTop="3dp"
+		        android:max="1000" />
+		
+		    <Button
+		        android:id="@+id/buttonSomar"
+		        android:layout_width="90dp"
+		        android:layout_height="40dp"
+		        android:layout_alignLeft="@+id/textViewValor"
+		        android:layout_below="@+id/editTextPercentagem"
+		        android:layout_marginTop="10dp"
+		        android:text="@string/button_somar" />
+		
+		    <Button
+		        android:id="@+id/buttonDiminuir"
+		        android:layout_width="90dp"
+		        android:layout_height="40dp"
+		        android:layout_below="@+id/editTextPercentagem"
+		        android:layout_marginLeft="150dp"
+		        android:layout_marginTop="10dp"
+		        android:text="@string/button_diminuir" />
+		    
+		    <TextView
+	            android:id="@+id/textViewLabelResultado"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/textViewValor"
+	            android:layout_marginTop="10dp"
+	            android:layout_below="@+id/buttonSomar"
+	            android:text="@string/label_resultado"
+	            android:textColor="#ff666666" />
+		
+		    <RelativeLayout
+		        android:id="@+id/relativeLayoutBgResultadoTop"
+		        android:layout_width="270dp"
+		        android:layout_height="5dp"
+		        android:layout_below="@+id/textViewLabelResultado"
+		        android:layout_marginTop="1dp"
+		        android:layout_alignLeft="@+id/textViewValor"
+		        android:background="@drawable/bg_resultado_top">
+			</RelativeLayout>
+			
+		    <RelativeLayout
+		        android:id="@+id/relativeLayoutBgResultado"
+		        android:layout_width="270dp"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/textViewValor"
+		        android:layout_below="@+id/relativeLayoutBgResultadoTop"		        
+		        android:background="@drawable/bg_resultado" >		        
+		
+		        <TextView
+		            android:id="@+id/textViewResultado"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="12dp"
+		            android:layout_marginTop="1dp"
+		            android:textColor="#ff666666" />
+		        
+		    </RelativeLayout>
+		    
+		    <RelativeLayout
+		        android:id="@+id/relativeLayoutBgResultadoBottom"
+		        android:layout_width="270dp"
+		        android:layout_height="5dp"
+		        android:layout_below="@+id/relativeLayoutBgResultado"		        
+		        android:layout_alignLeft="@+id/textViewValor"
+		        android:background="@drawable/bg_resultado_bottom">
+			</RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    
+</RelativeLayout>
+
