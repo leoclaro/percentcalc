@@ -1,0 +1,19 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+        android:state_empty="true" 
+        android:drawable="@android:drawable/star_off">
+        
+	    <item 
+	        android:state_expanded="true" 
+	        android:drawable="@android:drawable/star_on">
+	        
+		    <item 
+		        android:drawable="@android:drawable/star_off">
+			</item>
+	
+		</item>
+
+	</item>
+
+</selector>

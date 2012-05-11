@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="13" version="2.0">
+<workbench progressCount="30" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="132" y="132">
 <fastViewData fastViewLocation="1024"/>
@@ -22,6 +22,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="185" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -37,33 +38,19 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main.xml" partName="main.xml" path="E:/Projetos Android/DigitalTable/res/layout/main.xml" title="main.xml" tooltip="DigitalTable/res/layout/main.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DigitalTable/res/layout/main.xml"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExpandableListExample3Activity.java" partName="ExpandableListExample3Activity.java" path="C:/Users/Leonardo/Documents/Projetos Android/ExpandableListExample3/src/com/expandablelist3/ExpandableListExample3Activity.java" title="ExpandableListExample3Activity.java" tooltip="ExpandableListExample3/src/com/expandablelist3/ExpandableListExample3Activity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ExpandableListExample3/src/com/expandablelist3/ExpandableListExample3Activity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2356" selectionTopPixel="69"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" partName="strings.xml" path="E:/Projetos Android/DigitalTable/res/values/strings.xml" title="strings.xml" tooltip="DigitalTable/res/values/strings.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DigitalTable/res/values/strings.xml"/>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main.xml" partName="main.xml" path="C:/Users/Leonardo/Documents/Projetos Android/ExpandableListExample3/res/layout/main.xml" title="main.xml" tooltip="ExpandableListExample3/res/layout/main.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ExpandableListExample3/res/layout/main.xml"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ListaActivity.java" partName="ListaActivity.java" path="E:/Projetos Android/DigitalTable/src/com/digitaltable/ListaActivity.java" title="ListaActivity.java" tooltip="DigitalTable/src/com/digitaltable/ListaActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DigitalTable/src/com/digitaltable/ListaActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="515" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DigitalTableActivity.java" partName="DigitalTableActivity.java" path="E:/Projetos Android/DigitalTable/src/com/digitaltable/DigitalTableActivity.java" title="DigitalTableActivity.java" tooltip="DigitalTable/src/com/digitaltable/DigitalTableActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DigitalTable/src/com/digitaltable/DigitalTableActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="240" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdicionarItemActivity.java" partName="AdicionarItemActivity.java" path="E:/Projetos Android/DigitalTable/src/com/digitaltable/AdicionarItemActivity.java" title="AdicionarItemActivity.java" tooltip="DigitalTable/src/com/digitaltable/AdicionarItemActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DigitalTable/src/com/digitaltable/AdicionarItemActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="478" selectionTopPixel="0"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="ic_lista.xml" partName="ic_lista.xml" path="E:/Projetos Android/DigitalTable/res/drawable/ic_lista.xml" title="ic_lista.xml" tooltip="DigitalTable/res/drawable/ic_lista.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DigitalTable/res/drawable/ic_lista.xml"/>
+<editor id="com.android.ide.eclipse.editors.CommonXmlEditor" name="indicator.xml" partName="indicator.xml" path="C:/Users/Leonardo/Documents/Projetos Android/ExpandableListExample3/res/drawable/indicator.xml" title="indicator.xml" tooltip="ExpandableListExample3/res/drawable/indicator.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ExpandableListExample3/res/drawable/indicator.xml"/>
 </editor>
 </editors>
 <views>
@@ -99,8 +86,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (1 item)"/>
+<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Errors (3 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="75" org.eclipse.ui.ide.markerType="75" org.eclipse.ui.ide.pathField="100" org.eclipse.ui.ide.resourceField="75" org.eclipse.ui.ide.severityAndDescriptionField="250"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -153,7 +141,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 <view id="com.android.ide.eclipse.ddms.views.AllocTrackerView" partName="Allocation Tracker"/>
 </views>
-<perspectives activePart="com.android.ide.eclipse.editors.CommonXmlEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -217,7 +205,7 @@
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.2991239"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29890454"/>
 <view id="org.eclipse.ui.views.ProgressView" ratio="0.2991239"/>
 </fastViews>
 </fastViewBar>
@@ -268,7 +256,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@1932006" ratio="0.5" ratioLeft="317" ratioRight="317" relationship="4" relative="right">
-<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
+<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -421,106 +409,117 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/CalcularPercentagem/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/DigitalTable/res/layout/main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/DigitalTable/res/values/strings.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DigitalTable/src/com/digitaltable/ListaActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/DigitalTable/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DigitalTable/src/com/digitaltable/ListaActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DigitalTable/src/com/digitaltable/DigitalTableActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DigitalTable/src/com/digitaltable/AdicionarItemActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DigitalTable/src/com/digitaltable/DigitalTableActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/DigitalTable/res/drawable/ic_lista.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample2/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample2/res/layout/group_row.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample2/res/layout/childlayout.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ExpandableListExample2/src/com/expandablelistexample2/ExpandableListExample2Activity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/ExpandableListExample2/res/layout/group_row.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/ExpandableListExample2/res/layout/child_row.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample2/res/layout/child_row.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample2/res/layout/group_indicator.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/ExpandableListExample2/res/drawable/group_indicator.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample2/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample3/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ExpandableListExample3/src/com/expandablelist3/ExpandableListExample3Activity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample3/res/layout/main.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample3/res/drawable/indicator.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample3/res/drawable/indicator.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" path="/ExpandableListExample3/res/drawable/indicator.xml"/>
 </editors>
-<item historyLabel="CalcularPercentagem Manifest" index="0"/>
-<item historyLabel="main.xml" index="1"/>
-<item historyLabel="strings.xml" index="2"/>
-<item historyLabel="main.xml" index="1"/>
-<item historyLabel="strings.xml" index="2"/>
-<item historyLabel="main.xml" index="1"/>
-<item historyLabel="ListaActivity.java" index="3">
+<item historyLabel="ExpandableListExample2Activity.java" index="3">
 <position/>
 </item>
-<item historyLabel="main.xml" index="1"/>
-<item historyLabel="DigitalTable Manifest" index="4"/>
-<item historyLabel="ListaActivity.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DigitalTable Manifest" index="4"/>
-<item historyLabel="ListaActivity.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DigitalTableActivity.java" index="6">
+<item historyLabel="childlayout.xml" index="2"/>
+<item historyLabel="main.xml" index="0"/>
+<item historyLabel="group_row.xml" index="4">
 <position/>
 </item>
-<item historyLabel="ListaActivity.java" index="5">
-<position info="not_deleted" x="134" y="0"/>
-</item>
-<item historyLabel="DigitalTableActivity.java" index="6">
+<item historyLabel="group_row.xml" index="1"/>
+<item historyLabel="child_row.xml" index="5">
 <position/>
 </item>
-<item historyLabel="ListaActivity.java" index="5">
-<position info="not_deleted" x="348" y="0"/>
+<item historyLabel="child_row.xml" index="6"/>
+<item historyLabel="group_indicator.xml" index="7"/>
+<item historyLabel="child_row.xml" index="6"/>
+<item historyLabel="group_row.xml" index="1"/>
+<item historyLabel="main.xml" index="0"/>
+<item historyLabel="group_indicator.xml" index="8">
+<position info="not_deleted" x="358" y="0"/>
 </item>
-<item historyLabel="DigitalTableActivity.java" index="6">
+<item historyLabel="ExpandableListExample2Activity.java" index="3">
 <position/>
 </item>
-<item historyLabel="ListaActivity.java" index="5">
-<position info="not_deleted" x="348" y="0"/>
+<item historyLabel="main.xml" index="0"/>
+<item historyLabel="ExpandableListExample2Activity.java" index="3">
+<position info="not_deleted" x="3135" y="0"/>
 </item>
-<item historyLabel="DigitalTableActivity.java" index="6">
-<position/>
+<item historyLabel="main.xml" index="9"/>
+<item historyLabel="ExpandableListExample2Activity.java" index="3">
+<position info="not_deleted" x="996" y="4"/>
 </item>
-<item historyLabel="ListaActivity.java" index="5">
-<position info="not_deleted" x="348" y="0"/>
+<item historyLabel="main.xml" index="9"/>
+<item historyLabel="main.xml" index="10"/>
+<item historyLabel="ExpandableListExample2Activity.java" index="3">
+<position info="not_deleted" x="0" y="4071"/>
 </item>
-<item historyLabel="DigitalTable Manifest" index="4"/>
-<item historyLabel="main.xml" index="1"/>
-<item historyLabel="ListaActivity.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2231" y="0"/>
 </item>
-<item historyLabel="AdicionarItemActivity.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.xml" index="12"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="1711" y="0"/>
 </item>
-<item historyLabel="DigitalTable Manifest" index="4"/>
-<item historyLabel="DigitalTableActivity.java" index="6">
-<position info="not_deleted" x="140" y="206"/>
+<item historyLabel="main.xml" index="12"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="1711" y="0"/>
 </item>
-<item historyLabel="AdicionarItemActivity.java" index="7">
-<position info="not_deleted" x="139" y="0"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2428" y="0"/>
 </item>
-<item historyLabel="DigitalTable Manifest" index="4"/>
-<item historyLabel="AdicionarItemActivity.java" index="7">
-<position info="not_deleted" x="139" y="0"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2420" y="0"/>
 </item>
-<item historyLabel="ListaActivity.java" index="5">
-<position info="not_deleted" x="505" y="0"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2422" y="1"/>
 </item>
-<item historyLabel="DigitalTableActivity.java" index="8">
-<position/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2426" y="0"/>
 </item>
-<item historyLabel="AdicionarItemActivity.java" index="7">
-<position info="not_deleted" x="478" y="0"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2143" y="0"/>
 </item>
-<item historyLabel="ListaActivity.java" index="5">
-<position info="not_deleted" x="515" y="0"/>
+<item historyLabel="main.xml" index="12"/>
+<item historyLabel="indicator.xml" index="13"/>
+<item historyLabel="main.xml" index="12"/>
+<item historyLabel="indicator.xml" index="13"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2361" y="0"/>
 </item>
-<item historyLabel="ic_lista.xml" index="9"/>
-<item historyLabel="main.xml" index="1"/>
-<item historyLabel="DigitalTableActivity.java" index="8">
-<position info="not_deleted" x="535" y="0"/>
+<item historyLabel="indicator.xml" index="13"/>
+<item historyLabel="main.xml" index="12"/>
+<item historyLabel="indicator.xml" index="13"/>
+<item historyLabel="main.xml" index="12"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2361" y="0"/>
 </item>
-<item historyLabel="main.xml" index="1"/>
-<item historyLabel="DigitalTableActivity.java" index="8">
-<position info="not_deleted" x="542" y="0"/>
+<item historyLabel="main.xml" index="12"/>
+<item historyLabel="indicator.xml" index="14"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2361" y="0"/>
 </item>
-<item historyLabel="DigitalTableActivity.java" index="8">
-<position info="not_deleted" x="589" y="0"/>
+<item historyLabel="indicator.xml" index="14"/>
+<item historyLabel="main.xml" index="12"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2416" y="0"/>
 </item>
-<item historyLabel="DigitalTableActivity.java" index="8">
-<position info="not_deleted" x="240" y="0"/>
+<item historyLabel="indicator.xml" index="15"/>
+<item historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2463" y="2"/>
 </item>
-<item active="true" historyLabel="main.xml" index="1"/>
+<item historyLabel="indicator.xml" index="15"/>
+<item active="true" historyLabel="ExpandableListExample3Activity.java" index="11">
+<position info="not_deleted" x="2463" y="2"/>
+</item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -539,50 +538,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="ic_lista.xml" tooltip="DigitalTable/res/drawable/ic_lista.xml">
-<persistable path="/DigitalTable/res/drawable/ic_lista.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="indicator.xml" tooltip="ExpandableListExample3/res/drawable/indicator.xml">
+<persistable path="/ExpandableListExample3/res/drawable/indicator.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdicionarItemActivity.java" tooltip="DigitalTable/src/com/digitaltable/AdicionarItemActivity.java">
-<persistable path="/DigitalTable/src/com/digitaltable/AdicionarItemActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main.xml" tooltip="ExpandableListExample3/res/layout/main.xml">
+<persistable path="/ExpandableListExample3/res/layout/main.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DigitalTableActivity.java" tooltip="DigitalTable/src/com/digitaltable/DigitalTableActivity.java">
-<persistable path="/DigitalTable/src/com/digitaltable/DigitalTableActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExpandableListExample3Activity.java" tooltip="ExpandableListExample3/src/com/expandablelist3/ExpandableListExample3Activity.java">
+<persistable path="/ExpandableListExample3/src/com/expandablelist3/ExpandableListExample3Activity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="DigitalTable/AndroidManifest.xml">
-<persistable path="/DigitalTable/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main.xml" tooltip="ExpandableListExample2/res/layout/main.xml">
+<persistable path="/ExpandableListExample2/res/layout/main.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ListaActivity.java" tooltip="DigitalTable/src/com/digitaltable/ListaActivity.java">
-<persistable path="/DigitalTable/src/com/digitaltable/ListaActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="group_indicator.xml" tooltip="ExpandableListExample2/res/layout/group_indicator.xml">
+<persistable path="/ExpandableListExample2/res/layout/group_indicator.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="DigitalTable/res/values/strings.xml">
-<persistable path="/DigitalTable/res/values/strings.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="child_row.xml" tooltip="ExpandableListExample2/res/layout/child_row.xml">
+<persistable path="/ExpandableListExample2/res/layout/child_row.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main.xml" tooltip="DigitalTable/res/layout/main.xml">
-<persistable path="/DigitalTable/res/layout/main.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="group_row.xml" tooltip="ExpandableListExample2/res/layout/group_row.xml">
+<persistable path="/ExpandableListExample2/res/layout/group_row.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="CalcularPercentagem/AndroidManifest.xml">
-<persistable path="/CalcularPercentagem/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExpandableListExample2Activity.java" tooltip="ExpandableListExample2/src/com/expandablelistexample2/ExpandableListExample2Activity.java">
+<persistable path="/ExpandableListExample2/src/com/expandablelistexample2/ExpandableListExample2Activity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="menu.xml" tooltip="CalcularPercentagem/res/menu/menu.xml">
-<persistable path="/CalcularPercentagem/res/menu/menu.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="childlayout.xml" tooltip="ExpandableListExample2/res/layout/childlayout.xml">
+<persistable path="/ExpandableListExample2/res/layout/childlayout.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="sobrestrings.xml" tooltip="CalcularPercentagem/res/values/sobrestrings.xml">
-<persistable path="/CalcularPercentagem/res/values/sobrestrings.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="grouplayout_collapsed.xml" tooltip="ExpandableListExample2/res/layout/grouplayout_collapsed.xml">
+<persistable path="/ExpandableListExample2/res/layout/grouplayout_collapsed.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="menusobre.xml" tooltip="CalcularPercentagem/res/menu/menusobre.xml">
-<persistable path="/CalcularPercentagem/res/menu/menusobre.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="main.xml" tooltip="CalcularPercentagem/res/layout/main.xml">
-<persistable path="/CalcularPercentagem/res/layout/main.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="ExpandableListExample2/AndroidManifest.xml">
+<persistable path="/ExpandableListExample2/AndroidManifest.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalcularPercentagemActivity.java" tooltip="CalcularPercentagem/src/com/calcularpercentagem/CalcularPercentagemActivity.java">
 <persistable path="/CalcularPercentagem/src/com/calcularpercentagem/CalcularPercentagemActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="sobre.xml" tooltip="CalcularPercentagem/res/layout/sobre.xml">
-<persistable path="/CalcularPercentagem/res/layout/sobre.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="group_indicator.xml" tooltip="ExpandableListExample2/res/drawable/group_indicator.xml">
+<persistable path="/ExpandableListExample2/res/drawable/group_indicator.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="CalcularPercentagem/res/values/strings.xml">
-<persistable path="/CalcularPercentagem/res/values/strings.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExpList.java" tooltip="ExpandableListExample2/src/com/expandablelistexample2/ExpList.java">
+<persistable path="/ExpandableListExample2/src/com/expandablelistexample2/ExpList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExpAdapter.java" tooltip="ExpandableListExample2/src/com/expandablelistexample2/ExpAdapter.java">
+<persistable path="/ExpandableListExample2/src/com/expandablelistexample2/ExpAdapter.java"/>
 </file>
 </mruList>
 </workbench>
